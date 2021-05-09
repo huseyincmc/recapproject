@@ -1,4 +1,6 @@
-﻿using Entities.Entities.Concrete;
+﻿using Core.DataAccess;
+using Entities.DTOs;
+using Entities.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +11,6 @@ namespace DataAccessLayer.Repositories.Abstract
 {
    public interface ICarDal:IEntityRepository<Car>
     {
-
+        List<CarDetailDto> GetCarDetails();
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories.Concrete.Entity_Framework
 {
-    class ReCarContext:DbContext
+   public class ReCarContext:DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
